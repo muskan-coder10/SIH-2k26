@@ -21,6 +21,7 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/farmer", require("./routes/farmerRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/officer", require("./routes/officerRoutes"));
+app.use("/api/chatbot", require("./routes/chatbotRoutes"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

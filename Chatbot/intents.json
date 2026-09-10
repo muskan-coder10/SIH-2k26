@@ -1,0 +1,162 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi", "hello", "hey", "namaste", "namaskar", "kaise ho", "kya haal hai",
+        "good morning", "good afternoon", "aap kaun ho", "bot ho kya"
+      ],
+      "responses": [
+        "Namaste! Main ANNDISHA assistant hoon. Aap mujhse token, payment, procurement ya complaint se related sawal pooch sakte hain.",
+        "Hello! Kaise madad kar sakta hoon aapki?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "phir milenge", "chalta hoon", "band karo", "thik hai bye"
+      ],
+      "responses": [
+        "Dhanyavaad! Zarurat pade to phir se pooch lena.",
+        "Alvida! Aapka din shubh ho."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you", "thanks", "shukriya", "dhanyavaad", "bahut accha"
+      ],
+      "responses": [
+        "Aapka swagat hai!",
+        "Koi baat nahi, hamesha madad ke liye yahin hoon."
+      ]
+    },
+    {
+      "tag": "token_status",
+      "patterns": [
+        "mera token status kya hai", "token check karna hai", "token number kaise pata kare",
+        "mera token approve hua ya nahi", "token ka status batao", "token pending hai kya"
+      ],
+      "responses": [
+        "Aap apna token status Farmer portal ke 'Live Queue' section mein dekh sakte hain.",
+        "Token status ke liye Dashboard > Live Queue pe jaayein, wahan real-time status dikhega."
+      ]
+    },
+    {
+      "tag": "payment_status",
+      "patterns": [
+        "payment kab aayega", "mera payment nahi aaya", "payment status batao",
+        "paisa kab milega", "payment pending hai", "mera paisa kaha atka hai"
+      ],
+      "responses": [
+        "Payment status dekhne ke liye Farmer portal ke 'Payments' section mein jaayein.",
+        "Agar payment 7 din se zyada pending hai to complaint darj karayein, hum jaldi resolve karenge."
+      ]
+    },
+    {
+      "tag": "procurement_status",
+      "patterns": [
+        "procurement kab hoga", "meri fasal kab kharidi jayegi", "procurement status kya hai",
+        "mera anaaj kab uthaya jayega", "procurement date kya hai"
+      ],
+      "responses": [
+        "Procurement schedule aapko Dashboard pe 'Procurement' section mein dikhega.",
+        "Officer ne aapka procurement slot assign kiya hai, use Notifications mein check karein."
+      ]
+    },
+    {
+      "tag": "crop_registration",
+      "patterns": [
+        "fasal register kaise kare", "naya crop kaise add kare", "crop registration process",
+        "meri fasal register nahi ho rahi", "crop details kaise update kare"
+      ],
+      "responses": [
+        "Fasal register karne ke liye Farmer portal mein 'My Crops' > 'Add New Crop' pe click karein.",
+        "Crop registration ke liye zaruri documents (khasra number, aadhar) upload karna hoga."
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "complaint kaise kare", "shikayat darj karni hai", "mujhe complaint file karni hai",
+        "complaint status kya hai", "meri complaint ka jawab nahi aaya"
+      ],
+      "responses": [
+        "Complaint darj karne ke liye Farmer portal mein 'Support' ya 'Complaint' section use karein.",
+        "Aap apni complaint ka status Notifications section mein track kar sakte hain."
+      ]
+    },
+    {
+      "tag": "login_issue",
+      "patterns": [
+        "login nahi ho raha", "password bhool gaya", "account lock ho gaya",
+        "OTP nahi aa raha", "login mein error aa raha hai"
+      ],
+      "responses": [
+        "Agar login nahi ho raha to 'Forgot Password' option use karein ya registered mobile number check karein.",
+        "Agar OTP nahi aa raha to kuch der baad retry karein ya support se contact karein."
+      ]
+    },
+    {
+      "tag": "officer_verification",
+      "patterns": [
+        "officer verification kab hoga", "meri farm verify nahi hui", "verification status kya hai",
+        "officer ne verify kiya ya nahi"
+      ],
+      "responses": [
+        "Verification status Dashboard ke 'Verification' card mein dikhega.",
+        "Officer aapki details verify karne ke baad status automatically update ho jayega."
+      ]
+    },
+    {
+      "tag": "admin_payments",
+      "patterns": [
+        "admin payment kaise process kare", "bulk payment kaise kare", "payment approve kaise kare"
+      ],
+      "responses": [
+        "Admin Payments section se aap bulk payments process aur approve kar sakte hain.",
+        "Payment approve karne ke liye AdminPayments page mein farmer select karke 'Approve' click karein."
+      ]
+    },
+    {
+      "tag": "farmer_registration",
+      "patterns": [
+        "naya farmer register kaise kare", "farmer signup kaise kare", "account kaise banaye"
+      ],
+      "responses": [
+        "Farmer registration ke liye 'Sign Up' page pe jaakar apna naam, mobile number aur aadhar details bharein.",
+        "Registration ke baad officer verification hone tak account pending rahega."
+      ]
+    },
+    {
+      "tag": "weighing_process",
+      "patterns": [
+        "weighing kaise hoti hai", "tol kaise hota hai", "weighing slip kaha milegi"
+      ],
+      "responses": [
+        "Weighing process procurement center pe officer dwara ki jaati hai, slip Live Queue mein dikhegi.",
+        "Weighing ke baad aapko digital slip Notifications mein mil jayegi."
+      ]
+    },
+    {
+      "tag": "contact_officer",
+      "patterns": [
+        "officer se baat karni hai", "officer ka number chahiye", "officer se kaise contact kare"
+      ],
+      "responses": [
+        "Aap Officer ke contact details Dashboard ke 'Contact' section mein pa sakte hain.",
+        "Officer se direct baat karne ke liye Support ticket raise karein, officer response karega."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help chahiye", "madad karo", "kya kar sakte ho", "aap kya kya kar sakte ho", "menu dikhao"
+      ],
+      "responses": [
+        "Main token status, payment status, procurement status, crop registration, complaint aur login issues mein madad kar sakta hoon.",
+        "Bas apna sawal pooch dijiye, main koshish karunga sahi jawab dene ki."
+      ]
+    }
+  ]
+}

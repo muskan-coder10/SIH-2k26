@@ -1,5 +1,6 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import useAuth from '../hooks/useAuth'
+import ChatWidget from "./ChatWidget";
 import {
   Home, Ticket, CalendarDays, MapPin, Wheat, WalletCards,
   Users, Building2, BarChart3, ClipboardCheck, Scale, PackageCheck,
@@ -104,6 +105,8 @@ export default function AppShell({ role = 'farmer', children }) {
           </div>
           {children}
         </main>
+
+        <ChatWidget />
       </div>
     )
   }
@@ -148,6 +151,8 @@ export default function AppShell({ role = 'farmer', children }) {
           </div>
           {children}
         </main>
+
+        <ChatWidget />
       </div>
     )
   }
@@ -172,6 +177,8 @@ export default function AppShell({ role = 'farmer', children }) {
         </div>
         {children}
       </main>
+
+      <ChatWidget />
     </div>
   )
 }
